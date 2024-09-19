@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Winner_Page"
+    android:background="@color/white">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20px"
+        android:paddingTop="5px"
+        android:paddingBottom="5px"
+        app:columnCount="3"
+        app:rowCount="3"
+        android:background="#000000"
+        android:layout_above="@+id/winner">
+
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/blank"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/o"/>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/x"/>
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/o"/>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/x"/>
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/o"/>
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/x"/>
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/o"/>
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:src="@drawable/x"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20px"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/winner"
+        android:layout_marginTop="200px"/>
+
+
+</RelativeLayout>

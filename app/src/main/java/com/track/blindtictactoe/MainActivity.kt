@@ -92,12 +92,12 @@ class MainActivity : AppCompatActivity() {
                 done_btn.setOnClickListener {
                     if (F_Arr[index] == 0) {
                         F_Arr[index] = turn
-                        println(F_Arr.joinToString())
+//                        println(F_Arr.joinToString())
                         Turn_O()
                     } else {
 
                         X_Arr[index] = 0
-                        println(F_Arr.joinToString())
+//                        println(F_Arr.joinToString())
                         Turn_O()
                     }
                 }
@@ -168,7 +168,7 @@ class MainActivity : AppCompatActivity() {
                 done_btn.setOnClickListener {
                     if (F_Arr[index] == 0) {
                         F_Arr[index] = turn
-                        println(F_Arr.joinToString())
+//                        println(F_Arr.joinToString())
                         for (i in F_Arr.indices) {
                             F_Arr[i] *= 10
                         }
@@ -177,7 +177,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         if (F_Arr[index] == 1 || F_Arr[index] == -1) {
                             F_Arr[index] = 0
-                            println(F_Arr.joinToString())
+//                            println(F_Arr.joinToString())
                             Turn_X()
                         } else {
                             for (i in F_Arr.indices) {
@@ -214,6 +214,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun check_win() {
+        println(F_Arr.joinToString())
         //CHECKING FOR X---------------------------------------
         if(F_Arr[0] > 0 && F_Arr[1] > 0 && F_Arr[2] > 0)
         {
@@ -299,6 +300,12 @@ class MainActivity : AppCompatActivity() {
             o_flag++
             win()
         }
+        else if(F_Arr[0] != 0 && F_Arr[1] != 0 && F_Arr[2] != 0 && F_Arr[3] != 0 && F_Arr[4] != 0 && F_Arr[5] != 0 && F_Arr[6] != 0 && F_Arr[7] != 0 && F_Arr[8] != 0)
+        {
+            x_flag++
+            o_flag++
+            win()
+        }
 
     }
 
@@ -354,7 +361,7 @@ class MainActivity : AppCompatActivity() {
     fun check_click(callback: (Int) -> Unit) {
         img0.setOnClickListener {
             callback(0)
-            println("test 0")
+//            println("test 0")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -368,7 +375,7 @@ class MainActivity : AppCompatActivity() {
         }
         img1.setOnClickListener {
             callback(1)
-            println("test 1")
+//            println("test 1")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -382,7 +389,7 @@ class MainActivity : AppCompatActivity() {
         }
         img2.setOnClickListener {
             callback(2)
-            println("test 2")
+//            println("test 2")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -396,7 +403,7 @@ class MainActivity : AppCompatActivity() {
         }
         img3.setOnClickListener {
             callback(3)
-            println("test 3")
+//            println("test 3")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -410,7 +417,7 @@ class MainActivity : AppCompatActivity() {
         }
         img4.setOnClickListener {
             callback(4)
-            println("test 4")
+//            println("test 4")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -424,7 +431,7 @@ class MainActivity : AppCompatActivity() {
         }
         img5.setOnClickListener {
             callback(5)
-            println("test 5")
+//            println("test 5")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -438,7 +445,7 @@ class MainActivity : AppCompatActivity() {
         }
         img6.setOnClickListener {
             callback(6)
-            println("test 6")
+//            println("test 6")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -452,7 +459,7 @@ class MainActivity : AppCompatActivity() {
         }
         img7.setOnClickListener {
             callback(7)
-            println("test 7")
+//            println("test 7")
             if (turn == 1)
             {
                 x_box_fillup()
@@ -466,7 +473,7 @@ class MainActivity : AppCompatActivity() {
         }
         img8.setOnClickListener {
             callback(8)
-            println("test 8")
+//            println("test 8")
             if (turn == 1)
             {
                 x_box_fillup()
